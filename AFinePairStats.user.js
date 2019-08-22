@@ -163,7 +163,7 @@
 		}
 	});
 
-	var brand = GM_getValue('afp_branding', 'jobs').toLowerCase();
+	var brand = GM_getValue('afp_branding', 'levels').toLowerCase();
 	console.info("A Fine Pair Stats branding: " + brand);
     //**************************************
 
