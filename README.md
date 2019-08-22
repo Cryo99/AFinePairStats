@@ -1,11 +1,11 @@
 # AFinePairStats
-A userscript that shows A Fine Pair cache stats on geocaching.com. It adds the SideTracked banner in the following places:
+A userscript that shows A Fine Pair cache stats on geocaching.com. It adds the A Fine Pair banner in the following places:
 
 * the Stats Bar area of your account dashboard (old UI);
 * the sidebar of your account dashboard (new UI)
 * your public profile, if it doesn't already exist there (old and new UIs);
 * other users' profiles, if it doesn't already exist there (old and new UIs);
-* SideTracked cache pages.
+* A Fine Pair cache pages.
 
 On cache pages it adds the C. O.'s banner as well.
 
