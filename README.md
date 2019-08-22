@@ -17,6 +17,10 @@ __Update:__ This should no longer be true in the new UI.
 
 ## Version History
 
+### Version 0.0.2
+
+* Fixed a bug in brand prefs management.
+
 ### Version 0.0.1
 
 * Initial release.

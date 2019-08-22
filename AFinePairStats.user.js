@@ -10,7 +10,7 @@
 // @icon64      https://raw.githubusercontent.com/Cryo99/AFinePairStats/master/icon64.png
 // @include     /^https?://www\.geocaching\.com/(account|my|default|geocache|profile|seek/cache_details|p)/
 // @exclude     /^https?://www\.geocaching\.com/(login|about|articles|myfriends|account/*)/
-// @version     0.0.1
+// @version     0.0.2
 // @supportURL	https://github.com/Cryo99/AFinePairStats
 // @require     https://openuserjs.org/src/libs/sizzle/GM_config.js
 // @grant       GM_xmlhttpRequest
