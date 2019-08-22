@@ -6,8 +6,8 @@
 // @copyright   2019, Cryo99
 // @attribution A Fine Pair stats provided by Chris AKA Bus.Stop (http://www.afinepair.info/)
 // @attribution Icon image extracted from the A Fine Pair banner by Chris AKA Bus.Stop
-// @icon        https://raw.githubusercontent.com/Cryo99/SideTrackedStats/master/icon48.png
-// @icon64      https://raw.githubusercontent.com/Cryo99/SideTrackedStats/master/icon64.png
+// @icon        https://raw.githubusercontent.com/Cryo99/AFinePairStats/master/icon48.png
+// @icon64      https://raw.githubusercontent.com/Cryo99/AFinePairStats/master/icon64.png
 // @include     /^https?://www\.geocaching\.com/(account|my|default|geocache|profile|seek/cache_details|p)/
 // @exclude     /^https?://www\.geocaching\.com/(login|about|articles|myfriends|account/*)/
 // @version     0.0.1
