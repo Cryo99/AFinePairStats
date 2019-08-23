@@ -10,7 +10,7 @@
 // @icon64      https://raw.githubusercontent.com/Cryo99/AFinePairStats/master/icon64.png
 // @include     /^https?://www\.geocaching\.com/(account|my|default|geocache|profile|seek/cache_details|p)/
 // @exclude     /^https?://www\.geocaching\.com/(login|about|articles|myfriends|account/*)/
-// @version     0.0.2
+// @version     0.0.3
 // @supportURL	https://github.com/Cryo99/AFinePairStats
 // @require     https://openuserjs.org/src/libs/sizzle/GM_config.js
 // @grant       GM_xmlhttpRequest
@@ -125,6 +125,32 @@
 
 
 	//// EXECUTION STARTS HERE
+
+	// Don't run on frames or iframes
+	if(window.top !== window.self){
+		return false;
+	}
+
+	if(/\/my\//.test(location.pathname)){
+		// On a My Profile page
+		currentPage = "my";
+    }else if(/\/account\//.test(location.pathname)){
+		// On a Profile page
+		currentPage = "account";
+	}else{
+		if(cacheName){
+			// On a Geocache page...
+			if(!/A Fine Pair/i.test(cacheName.innerHTML)){
+				// ...but not an A Fine Pair  cache
+				return;
+			}
+			currentPage = "cache";
+		}else{
+			currentPage = "profile";
+		}
+	}
+
+	// We're going to display so we can announce ourselves and prepare the dialogue.
 	console.info("A Fine Pair Stats V" + GM_info.script.version);
 
     //******* Configuration dialogue *******
@@ -163,33 +189,10 @@
 		}
 	});
 
-	var brand = GM_getValue('afp_branding', 'levels').toLowerCase();
+	var brand = GM_getValue('afp_branding', 'Levels');
 	console.info("A Fine Pair Stats branding: " + brand);
+	brand = brand.toLowerCase()
     //**************************************
-
-	// Don't run on frames or iframes
-	if(window.top !== window.self){
-		return false;
-	}
-
-	if(/\/my\//.test(location.pathname)){
-		// On a My Profile page
-		currentPage = "my";
-    }else if(/\/account\//.test(location.pathname)){
-		// On a Profile page
-		currentPage = "account";
-	}else{
-		if(cacheName){
-			// On a Geocache page...
-			if(!/A Fine Pair/i.test(cacheName.innerHTML)){
-				// ...but not an A Fine Pair  cache
-				return;
-			}
-			currentPage = "cache";
-		}else{
-			currentPage = "profile";
-		}
-	}
 
     var hider;
 	switch(currentPage){
