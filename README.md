@@ -1,4 +1,4 @@
-# AFinePairStats
+# A Fine Pair Stats
 
 A userscript that shows A Fine Pair cache stats on geocaching.com. It adds the [A Fine Pair](https://www.afinepair.co.uk/) banner in the following places:
 
