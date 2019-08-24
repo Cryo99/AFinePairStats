@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        AFinePairStats
+// @name        A Fine Pair Stats
 // @namespace   http://www.cryotest.com/
 // @description Adds your A Fine Pair stats badge onto your profile page and A Fine Pair cache pages on geocaching.com.
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
