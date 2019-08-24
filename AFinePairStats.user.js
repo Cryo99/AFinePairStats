@@ -4,13 +4,13 @@
 // @description Adds your A Fine Pair stats badge onto your profile page and A Fine Pair cache pages on geocaching.com.
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @copyright   2019, Cryo99
-// @attribution A Fine Pair stats provided by Chris AKA Bus.Stop (http://www.afinepair.info/)
+// @attribution A Fine Pair stats provided by Chris AKA Bus.Stop (http://www.afinepair.co.uk/)
 // @attribution Icon image extracted from the A Fine Pair banner by Chris AKA Bus.Stop
 // @icon        https://raw.githubusercontent.com/Cryo99/AFinePairStats/master/icon48.png
 // @icon64      https://raw.githubusercontent.com/Cryo99/AFinePairStats/master/icon64.png
 // @include     /^https?://www\.geocaching\.com/(account|my|default|geocache|profile|seek/cache_details|p)/
 // @exclude     /^https?://www\.geocaching\.com/(login|about|articles|myfriends|account/*)/
-// @version     0.0.3
+// @version     0.0.4
 // @supportURL	https://github.com/Cryo99/AFinePairStats
 // @require     https://openuserjs.org/src/libs/sizzle/GM_config.js
 // @grant       GM_xmlhttpRequest
